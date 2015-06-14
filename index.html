@@ -30,6 +30,50 @@
 
 <p>Font Manager is NOT a professional-grade font management solution.</p>
         </section>
+        
+        <hr>
+        
+        <header>
+          <h2>Arch User Repository</h2>
+          <p>
+              With the recent move to Github the Arch package still tracks the SVN version.
+              <pre>
+                  yaourt -S font-manager-svn
+              </pre>
+           </p>
+        </header>
+
+        <header>
+          <h2>Fedora Copr Repository</h2>
+          <p>
+              For Fedora packages built from the latest release.
+          <pre>
+              dnf copr enable jerrycasiano/FontManager
+              dnf install font-manager
+          </pre>
+           </p>
+        </header>
+        
+        <header>
+          <h2>Ubuntu Personal Package Archive</h2>
+          <p>
+              For Debian packages built from current master.
+          <pre>
+              sudo add-apt-repository ppa:font-manager/staging
+              sudo apt-get update
+              sudo apt-get install font-manager 
+          </pre>
+           </p>
+        </header>
+        
+        <p>
+            Fedora and Ubuntu users can also find nautilus-font-manager in the repositories.
+            <br />
+            Nemo and Thunar extensions (untested) are in the <a href="https://github.com/FontManager/master/tree/master/extensions">Github extensions directory</a>
+            Feedback on those is appreciated.
+        </p>
+        
+        
 
         <footer>
         
